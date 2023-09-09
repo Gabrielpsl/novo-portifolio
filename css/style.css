@@ -82,7 +82,7 @@ header nav ul li {
 /* ESTILO DO TOPO DO SITE */
 
 section.topo-site {
-    padding: 40px 4%
+    padding: 140px 4%
 }
 
 section.topo-site .flex{
@@ -112,7 +112,7 @@ section.topo-site .flex{
 /* CSS DA IMAGNES */
 .topo-site .img-top-site img {
     width: 400px;
-    padding: 10px;
+    padding: 4px;
     background-color: #00FF08;
     border-radius: 10px;
     margin-right: 60px;
@@ -196,7 +196,7 @@ section.sobre .flex {
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button {
+.btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -214,44 +214,237 @@ section.sobre .flex {
         }
 }
 
+/* ESTILO DO PORTILIO */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.img-sobre img {
-    width: 300px;
-    height: 380px;
-    border-radius: 20px;
-    padding: 3px;
-    background-color: #00FF08;
+section.portifolio {
+    padding:  130px 4%;
+    box-shadow:  0 0 40px 10px #ffffff1d;
 }
+
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: #00FF08;
+    background-size: cover;
+    background-position: 100% 0%;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: 8s;
+    position: relative;
+        &:hover {
+            background-position: 100% 100%;
+            
+        }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000d2;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+        &:hover {
+            opacity: 1;   
+        }
+}
+
+/* ESTILO FORMULARIO */
+
+section.formulario {
+    padding:  130px 4%;
+    box-shadow:  0 0 10px 10px #ffffff1d;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+
+
+form input, textarea {
+    width: 100%;
+    background-color: #1f1f1f15;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    color: #ffffff6b;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+form textarea {
+    resize: none;
+    height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #00FF08;
+    color: #000;
+    font-weight: 800px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: .2s;
+        &:hover {
+            box-shadow: 0px 0px 8px;
+            transform: scale(1.05);
+            color: #fff;
+        }
+}
+
+/* ESTILO RODAPÉ */
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+.borda {
+    border-top: 2px solid #08e410;
+}
+    
+
+
+footer .line-footer p i {
+    color: #08e410;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 1112px){
+    .btn-contato {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 929px) {
+    .topo-site .img-top-site img {
+        margin-right: 0px;
+    }
+
+    section.sobre .flex {
+        flex-direction: column-reverse;
+    }
+
+    .txt-sobre h2 {
+        text-align: center;
+    }
+
+    .txt-sobre p {
+        text-justify: auto;
+    }
+
+    .img-sobre img {
+        width: 400px;
+    }
+
+    .img-port {
+        width: 320px;
+        height: 420px;
+    }
+
+    .btn-social  {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    section.topo-site {
+        padding: 40px 4%
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .btn-contato {
+        display: none;
+    }
+
+
+    .txt-top-site {
+        justify-content:center ;
+    }
+
+    .interface .flex {
+        flex-direction: column-reverse;
+    }
+        
+    
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
