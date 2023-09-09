@@ -1,0 +1,257 @@
+/* Estilo Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00FF08;
+    font-size: 40px;
+}
+
+/* Estilo do cabeçalho */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(74, 74, 74);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+        &:hover {
+            color: #fff;
+            transform: scale(1.05);
+        }
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+        &:hover {
+            box-shadow: 0px 0px 8px #08e410;
+            color: #fff;
+            transform: scale(1.05);
+            transition: .2s;
+        }
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-site {
+    padding: 40px 4%
+}
+
+section.topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-site h1 span {
+    color: #00FF08;
+    font-size: 84px;
+}
+
+.topo-site  .txt-top-site p {
+    color: #fff;
+    margin: 40px 0;
+    font-size: 15px;
+}
+
+
+/* CSS DA IMAGNES */
+.topo-site .img-top-site img {
+    width: 400px;
+    padding: 10px;
+    background-color: #00FF08;
+    border-radius: 10px;
+    margin-right: 60px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+   100% {
+        top: 30px;
+    }
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+
+
+section.especialidades {
+    padding: 120px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+        &:hover {
+            transform: scale(1.05);
+            box-shadow:  0 0 8px #ffffff8d;
+        }
+}
+
+.especialidades .especialidades-box i {
+    font-size: 78px;
+    color: #08e410;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* ESTILO DO SOBRE */
+
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #00FF08;
+    font-size: 42px;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00FF08;
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 10px;
+        &:hover {
+            box-shadow: 0px 0px 8px #08e410;
+            color: #fff;
+            transform: scale(1.05);
+            transition: .2s;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img-sobre img {
+    width: 300px;
+    height: 380px;
+    border-radius: 20px;
+    padding: 3px;
+    background-color: #00FF08;
+}
